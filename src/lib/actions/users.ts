@@ -25,4 +25,4 @@ export async function syncUser() {
   } catch (error) {
     console.log("Error in syncUser server action", error);
   }
-}
+} 
