@@ -28,7 +28,7 @@ function Navbar() {
                         <span className="hidden md:inline">Dashboard</span>
                     </Link>
 
-                    <Link href="/dashboard/appointments" className={`flex items-center gap-2 transition-colors ${pathname === "/dashboard/appointments" ? "text-foreground hover:text-primary font-medium": "text-muted-foreground hover:text-foreground" }`}>
+                    <Link href="/appointments" className={`flex items-center gap-2 transition-colors ${pathname === "/appointments" ? "text-foreground hover:text-primary font-medium": "text-muted-foreground hover:text-foreground" }`}>
                         <CalendarIcon className="w-4 h-4"/>
                         <span className="hidden md:inline">Appointments</span>
                     </Link>
