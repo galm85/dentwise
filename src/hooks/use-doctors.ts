@@ -20,6 +20,7 @@ export function useCreateDoctor(){
         onSuccess: ()=>{
             console.log("Doctor Created")
             queryClient.invalidateQueries({queryKey:["getDoctors"]})
+            queryClient.invalidateQueries({queryKey:["getAvailableDoctors"]})
         },
         onError:(error)=>console.log("error while creating a doctor ", error)
     })

@@ -2,6 +2,7 @@
 
 import AdminStats from "@/components/admin/AdminStats";
 import DoctorsManagment from "@/components/admin/DoctorsManagment";
+import RecentAppointments from "@/components/admin/RecentAppointments";
 import Navbar from "@/components/Navbar"
 import { useGetAppointments } from "@/hooks/use-appointments";
 import { useGetDoctors } from "@/hooks/use-doctors";
@@ -56,6 +57,7 @@ function AdminDashboardClient() {
 
             <AdminStats totalDoctors={stats.totalDoctors} activeDoctors={stats.activeDoctors} totalAppointments={stats.totalAppointments} completedAppointments={stats.completeAppointments} />
             <DoctorsManagment/>
+            <RecentAppointments/>
         </div>
 
     </div>
